@@ -1,0 +1,9 @@
+.number{
+  padding: 2%;
+  text-align: center;
+  position:fixed;
+  background-color:rgb(255, 255, 255);
+  width: 100%;
+  color: rgb(37, 42, 41);
+  z-index: 10;
+}

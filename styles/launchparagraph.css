@@ -1,0 +1,314 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0%;
+  color: #1b263b;
+  font-size: 1rem;
+  line-height: 200%;
+  letter-spacing: 1px;
+  scroll-behavior: smooth;
+}
+
+.animated-gradient-text {
+  font-size: 6rem;
+  font-weight: 800;
+  display: inline-block;
+  background: linear-gradient(to right,#ff0000, #ffffff,#ff0000);
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s linear infinite; 
+}
+
+.animated-gradient-text {
+  color: #000B4F
+}
+
+.animated-gradient-text:hover {
+  cursor: pointer;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.section {
+  display: flex;
+  padding-bottom: 0%;
+}
+
+.sectionimg {
+  margin-top: 4%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Or cover depending on your needs */
+  image-rendering: auto;
+  color: #000B4F;
+}
+
+.main-name {
+  filter: brightness(200%);
+  font-size: 6rem;
+  margin-top: -70vh;
+  width: 100%;
+  text-align: center;
+  object-fit: contain;  
+  font-weight: 900;
+  image-rendering: auto; 
+
+}
+
+
+.main-para {
+  filter: brightness(200%);
+  color: #EBEBEB;
+  font-size: 2rem;
+  margin: -2% auto 10%;
+  font-weight: 500;
+  max-width: fit-content;
+}
+
+.pic {
+  width: 30%;
+  contain: content;
+  height: fit-content;
+  border-radius: 50%;
+  margin: 6% 2%;
+}
+
+.client-title{
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 5% 10% 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutmetemp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1 20%;
+  margin: 0 2% 0 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.my-paragraph {
+  margin: 3% 10% 0;
+  line-height: 200%;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+}
+
+.services-temp{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  width: 100%;
+  padding: 0 5%;
+}
+
+.services-section {
+  position: relative;
+  margin: -10% 5% 0 5%;
+  z-index: 5;
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.services-title {
+  margin-top: 22vh;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1b263b;
+  letter-spacing: 2px;
+}
+
+.service-card {
+  padding: 2.5rem 2rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000B4F;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+@media (max-width: 1240px) {
+  .animated-gradient-text {
+    font-size: 5rem;
+    padding: 2%;
+  }
+
+  .main-para, .review-para,  .my-paragraph{
+    font-size: 1rem;
+  }
+
+  .sectionimg{
+    height: 100vh;
+  }
+
+  .services-temp {
+    grid-template-columns: 1fr 1fr;
+    padding: 3% 5%;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .animated-gradient-text {
+    font-size: 4rem;
+  }
+
+  .qual-title,.my-intro{
+    font-size: .9rem;
+  }
+  .main-name {
+    margin-top: -80vh;
+  }
+
+  .main-para, .review-para,  .my-paragraph {
+    font-size: .8rem;
+  }
+
+  .reviewtemp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .aboutmetemp {
+    flex-direction: column;
+  }
+  .sectionimg{
+    height: 100vh;
+  }
+  .pic {
+    align-self: center;
+  }
+
+  .services-temp {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-section {
+    margin: -8% 3% 0 3%;
+  }
+  
+}
+
+
+
+
+@media (max-width: 600px) {
+  .animated-gradient-text {
+    font-size: 3rem;
+  }
+  .sectionimg{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .main-name {
+    margin-top: -70vh;
+  }
+
+  .main-para {
+    margin-top: -5%;
+  }
+
+  .main-para, .review-para,  .my-paragraph {
+    font-size: .8rem;
+  }
+
+  .reviewtemp {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .services-temp {
+    grid-template-columns: 1fr;
+    padding: 5%;
+    gap: 1.5rem;
+  }
+
+  .services-title {
+    font-size: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 2.5rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+
+  .services-section {
+    margin: -15% 2% 0 2%;
+  }
+}
