@@ -36,9 +36,15 @@
   border-radius: 50%;
   transition: all 0.3s ease;
   cursor: pointer;
-  color: #1b263b;
   text-decoration: none;
   border: 2px solid transparent;
+}
+
+.social-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: invert(0.2) brightness(0.8);
 }
 
 .social-icon:hover {

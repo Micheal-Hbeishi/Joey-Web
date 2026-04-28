@@ -212,6 +212,9 @@ body {
 }
 
 @media (max-width: 800px) {
+  .number{
+    font-size: .7rem;
+  }
   .animated-gradient-text {
     font-size: 4rem;
   }
@@ -262,7 +265,7 @@ body {
 
 @media (max-width: 600px) {
   .animated-gradient-text {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   .sectionimg{
     width: 100vw;
